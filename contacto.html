@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agencia de Turismo | Contacto</title>
+    <meta name="description" content="Reserva con nosotros y contáctanos para diseñar tu próximo viaje." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">L</span>
+          <span>Loja Turismo</span>
+        </a>
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a>
+          <a href="destinos.html">Destinos</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="contacto.html" class="active">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container contact-wrap">
+        <header class="page-header">
+          <p class="eyebrow">Contacto y reserva</p>
+          <h1>Cuéntanos tu viaje ideal</h1>
+        </header>
+
+        <form class="reservation-form" action="#" method="post">
+          <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="correo">Correo electrónico</label>
+            <input id="correo" name="correo" type="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" name="telefono" type="tel" required />
+          </div>
+
+          <div class="form-row">
+            <label for="destino">Destino o actividad</label>
+            <input id="destino" name="destino" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="fecha">Fecha</label>
+            <input id="fecha" name="fecha" type="date" required />
+          </div>
+
+          <div class="form-row">
+            <label for="personas">Número de personas</label>
+            <input id="personas" name="personas" type="number" min="1" required />
+          </div>
+
+          <div class="form-row">
+            <label for="servicio">Tipo de servicio</label>
+            <select id="servicio" name="servicio" required>
+              <option value="">Selecciona</option>
+              <option value="Tour de naturaleza">Tour de naturaleza</option>
+              <option value="Tour gastronómico">Tour gastronómico</option>
+              <option value="Tour cultural">Tour cultural</option>
+              <option value="Tour de aventura">Tour de aventura</option>
+              <option value="Paquete fin de semana">Paquete fin de semana</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar reserva</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 Loja Turismo</p>
+        <p>Estamos listos para ayudarte.</p>
+      </div>
+    </footer>
+  </body>
+</html>
